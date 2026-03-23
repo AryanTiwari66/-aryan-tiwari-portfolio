@@ -906,4 +906,14 @@ function openModal(id) {
 
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('open');
-  document.body.style.over
+  document.body.style.overflow = '';
+}
+
+function handleOverlayClick(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>
