@@ -1,6 +1,0 @@
-{
-  "installCommand": "npm --prefix clouds install",
-  "buildCommand": "npm --prefix clouds run build",
-  "outputDirectory": "clouds/dist",
-  "framework": null
-}
